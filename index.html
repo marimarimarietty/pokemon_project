@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>Pokemonずかん</title>
+  <link href="./css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="./images/ball.svg" />
+  <script type="text/javascript" src="allPokemon.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__title">
+        <h1 class="header__h1">
+          Pokemon<span>ずかん</span>
+        </h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="pokemonlist">
+      <div class="pokemonlist__inner">
+        <ul class="polemon__list">
+          <!-- 配列入れる -->
+        </ul>
+      </div>
+    </section>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- ポケモン詳細表示 -->
+          <div id="modal-detail"></div>
+          <button id="closeBtn">close</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
