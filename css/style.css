@@ -13,12 +13,6 @@ body {
   border-bottom: 3px solid #dc143c;
 }
 
-.header__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .header__h1 {
   font-weight: bold;
   color: #dc143c;
@@ -26,6 +20,18 @@ body {
 
 .header__h1 span {
   color: #ff8c00;
+}
+
+.search-box {
+  display: flex;
+}
+
+#searchButton {
+  margin-left: 10px;
+}
+
+#searchButton img {
+  width: 30px;
 }
 
 .main {

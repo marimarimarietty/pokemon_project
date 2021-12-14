@@ -491,8 +491,8 @@ const allPokemon = [
   {
     Number: "008",
     Name: "Wartortle",
-    Jname: "フシギソウ",
-    Image: "./images/fushigiso.png",
+    Jname: "カメール",
+    Image: "./images/kamer.png",
     Generation: "Generation I",
     About:
       "Its tail is large and covered with a rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evidence of this Pokémon's toughness as a battler.",

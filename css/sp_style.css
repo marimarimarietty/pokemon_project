@@ -17,10 +17,23 @@
   .header__inner {
     width: 100%;
     padding: 10px;
+    display: block;
   }
 
   .header__h1 {
     font-size: 22px;
+  }
+
+  .search-box {
+    margin: 10px auto 0 100px;
+  }
+
+  #name-search {
+    border: 2px solid #ff8c00;
+    width: 200px;
+    height: 30px;
+    padding: 5px 5px 5px 10px;
+    border-radius: 8px;
   }
 
   .pokemonlist {
@@ -47,7 +60,7 @@
   }
 
   .modal-content{
-    margin: 40% auto;
+    margin: 35% auto;
   }
 
   .pokemon_detail {
