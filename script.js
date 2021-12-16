@@ -140,6 +140,4 @@ function searchName() {
 
 // 検索ボタンクリック
 const search_button = document.getElementById("searchButton");
-if (search_button) {
-  search_button.addEventListener('click', searchName);
-}
+search_button.addEventListener('click', searchName);
