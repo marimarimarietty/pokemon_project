@@ -12,12 +12,14 @@
   <script type="text/javascript" src="allPokemon.js"></script>
 </head>
 
-<body>
+<body onLoad=allPokemonList()>
   <header class="header">
     <div class="header__inner">
       <div class="header__title">
         <h1 class="header__h1">
-          Pokemon<span>ずかん</span>
+          <a href="./index.html">
+            Pokemon<span>ずかん</span>
+          </a>
         </h1>
       </div>
       <div class="search-box">
@@ -29,7 +31,7 @@
   <main>
     <section class="pokemonlist">
       <div class="pokemonlist__inner">
-        <ul class="polemon__list">
+        <ul class="pokemon__list">
           <!-- 配列入れる -->
         </ul>
       </div>

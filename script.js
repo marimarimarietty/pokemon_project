@@ -1,9 +1,9 @@
 'use strict'
 // Please don't delete the 'use strict' line above
 
-window.onload = function () {
+function allPokemonList() {
   //ポケモン一覧を表示する
-  const pokemon = document.getElementsByClassName("polemon__list")
+  const pokemon = document.getElementsByClassName("pokemon__list")
   const pokemonList = [];
   for (let i = 0; i < allPokemon.length; i++) {
     pokemonList.push(`
@@ -98,3 +98,48 @@ function closeBtn() {
 
 const close_button = document.getElementById("closeBtn");
 close_button.addEventListener('click', closeBtn);
+
+// 検索機能
+function searchName() {
+  let value = "";
+  value = document.getElementById("name-search").value;
+  const searchPokemon = [];
+  for (let i = 0; i < allPokemon.length; i++) {
+    if (allPokemon[i].Jname.indexOf(value) !== -1) {
+      searchPokemon.push(allPokemon[i]);
+    }
+  }
+
+  //ポケモン一覧を表示する
+  const pokemon = document.getElementsByClassName("pokemon__list")
+  const pokemonList = [];
+  //　何もなかったら
+  if (searchPokemon.length === 0) {
+    pokemonList.push(`<p class="nopokemon">お探しのモンスターはいませんでした。。</p>`);
+  } else {
+    for (let i = 0; i < searchPokemon.length; i++) {
+      pokemonList.push(`
+        <li class="pokemon__item">
+          <a class="pokemon__click" onClick=pokemon(${i})>
+            <h3 class="pokemon__name">
+              ${allPokemon[i].Jname}
+            </h3>
+            <div class="pokemon__image">
+              <img src=${allPokemon[i].Image} alt="" />
+            </div>
+          </a>
+        </li>
+      `)
+    }
+  }
+  // ポケモンリストの中身を削除する
+  pokemon[0].innerHTML = '';
+  // ポケモンリストを表示する
+  pokemon[0].innerHTML = pokemonList.join('');
+}
+
+// 検索ボタンクリック
+const search_button = document.getElementById("searchButton");
+if (search_button) {
+  search_button.addEventListener('click', searchName);
+}
